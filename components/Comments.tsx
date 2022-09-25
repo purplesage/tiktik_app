@@ -31,7 +31,7 @@ const Comments = ({
   const { userProfile, allUsers } = useAuthStore();
 
   return (
-    <div className="border-t-2 border-gray-200 pt-4 px-10 bg-[#F8F8F8] border-b-2 lg:pb-0 pb-[100px]">
+    <div className="border-t-2 border-gray-200 pt-4 px-10 mt-4 bg-[#F8F8F8] border-b-2 lg:pb-0 pb-[100px]">
       <div className="overflow-scroll lg:h-[475px]">
         {comments?.length > 0 ? (
           comments.map((item, idx) => (
@@ -42,7 +42,7 @@ const Comments = ({
                     <div className="p-2 items-center" key={idx}>
                       <Link href={`/profile/${user._id}`}>
                         <div className="flex items-start gap-3">
-                          <div className="w-8 h-8">
+                          <div className="w-12 h-12">
                             <Image
                               className="rounded-full"
                               alt="user profile"

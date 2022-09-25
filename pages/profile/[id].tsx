@@ -33,8 +33,8 @@ const Profile = ({ data }: IProps) => {
 
   return (
     <div className="w-full">
-      <div className="flex gap-6 md:gap-10 mb-4 bg-white w-full">
-        <div className="w-8 h-8">
+      <div className="flex gap-6 md:gap-4 mb-4 bg-white w-full">
+        <div className="w-10 h-10">
           <Image
             className="rounded-full"
             alt="user profile"
@@ -65,7 +65,7 @@ const Profile = ({ data }: IProps) => {
             className={`text-xl font-semibold cursor-pointer mt-2 ${liked}`}
             onClick={() => setShowUserVideos(false)}
           >
-            Videos
+            Likes
           </p>
         </div>
         <div className="flex gap-6 flex-wrap md:justify-start">
